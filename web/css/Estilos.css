@@ -1,0 +1,243 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/10/2020, 08:14:22 PM
+    Author     : eliu
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: absolute;
+    text-align: center;
+    height: 100px;
+    width: 100% ;
+    border:1px solid black;
+    background-color: rgb(161, 134, 60);
+}
+header h1{
+    padding-top: 30px;
+}
+
+nav {
+    background-color: #d1f4ff; 
+    position: absolute;
+    top: 101px;
+    left: 0;
+    width: 270px;
+    height: calc(100% - 144px);
+    border: 1px solid black;
+}
+
+nav li a {
+    display: block;
+    width: auto;  
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #9b9430;
+    line-height: 2.5em;
+    height: 2.5em;
+    padding: 0 10px;
+    border-bottom: 1px solid Silver;
+}
+
+nav a:hover {
+    color: #eee;
+    background-color: #10df3d;
+}
+
+main {
+    background-color: lightblue;
+    position: absolute;
+    top: 101px;
+    left: 271px;
+    height: calc(100% - 144px);
+    width: calc(100% - 271px);
+    border: 1px solid black;
+}
+
+.titulo{
+    border:1px dashed black;
+    border-radius: 10px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    display: block;
+    width: 400px;
+}
+
+form{
+    display: block;
+    border: 1px solid black;
+    margin: 10px auto 0 auto;
+}
+#form_CapturaClave{
+    height: 110px;
+    width: 220px;
+}
+
+#form_CapturaProducto{
+    height: 200px;
+    width: 240px;
+}
+
+.inventarioMaterial{
+    width: 350px;
+    height: 150px;
+}
+
+select{
+    width: 145px;
+}
+
+.tabla{
+    display: table;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.tabla.centrada{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla.input{
+    margin-left: 15%;
+    
+    
+}
+
+.fila{
+    display: table-row;
+}
+
+.celda{
+    display: table-cell;
+}
+.celda.label{
+    text-align: right;
+}
+
+.error{
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color: red;
+
+}
+
+input[type="text"]{
+    font-size: 15px;
+    
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    padding: 4px;
+}
+
+input[type="reset"]{
+    font-size: 15px;
+    padding: 4px;
+    margin-left: 16%;
+}
+
+
+
+table.centrada {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+table.bicolor {
+    margin-top: 15px;
+    font-size: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table.bicolor th{
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+
+th {
+    text-align: center;
+    background-color: #39a83d;
+    border: 1px solid rgb(92, 77, 77);
+    color: #eee;
+}
+
+td{
+    text-align: center;
+    border: 1px solid #2ae230;
+     
+}
+
+td.derecha {
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+td.gris {
+    background-color: #ddd;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+}
+  
+tbody tr:nth-child(odd){
+    background-color: #fad585;
+    color: rgb(0, 0, 0);
+  }
+
+footer{
+    background-color: rgb(0, 153, 107);
+    color: whitesmoke;
+    position: absolute;
+    border: 1px solid black;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+
+}
+
+footer p{
+    margin-left: 60px;
+
+}
+
+#errorPagina{
+    padding-left:40% ;
+}
+
+#errorPagina img{
+    width: 200px;
+    height: 200px;
+}
+
+#errorClave{
+    padding-top: 5px;
+    text-align: center;
+    color: red;
+    outline: none;
+}
+
+#claveId{
+    outline: none;
+}

@@ -1,0 +1,10 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<nav>
+    <ul>
+        <li><a href="Control?pagina=CapturaMaterialInventariar">Inventariar Material</a></li>
+        <li><a href="Control?pagina=CapturaMaterialDesinventariar">Desinventariar Material</a></li>
+        <li><a href="Control?pagina=DespliegaInventarioMateriales">Consultar inventario de materiales</a></li>
+        <li><a href="Control?pagina=index">Regresar Menu Principal</a></li>
+    </ul>
+</nav>
