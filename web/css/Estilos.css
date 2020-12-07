@@ -42,7 +42,7 @@ nav li a {
     width: auto;  
     text-decoration: none;
     color: #ffffff;
-    background-color: #9b9430;
+    background-color: #a39c34;
     line-height: 2.5em;
     height: 2.5em;
     padding: 0 10px;
@@ -51,7 +51,7 @@ nav li a {
 
 nav a:hover {
     color: #eee;
-    background-color: #10df3d;
+    background-color: #b45d0c;
 }
 
 main {

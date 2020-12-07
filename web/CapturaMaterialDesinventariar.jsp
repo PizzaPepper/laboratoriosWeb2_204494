@@ -22,7 +22,7 @@
         <main>
             <div class="titulo">
                 <h1>Desinventariar Material</h1>
-                <p>Captura los productos a desinventariar.</p>
+                <p>Captura los materiales a desinventariar.</p>
             </div>
     
             <form action="desinventariarMaterial" method="post" name="CapturarDesinventariarMaterial" class="inventarioMaterial">
@@ -47,7 +47,7 @@
                     <div class="fila">
                         <div class="celda label"> <label for="cantidadId">Cantidad* &ensp;</label> </div>
                         <div class="celda"> <input type="number" id="cantidadId" name="cantidad" value="0" 
-                            size="3" min="1" max="999"/></div>
+                            size="3" min="1" max="999" onkeypress="return checkInput(event)"/></div>
                     </div>
                 </div>
                     <br>
@@ -64,11 +64,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="error"></div>
             </form>
-    
         </main>
-        
-        
+        <script src="js/script.js"></script>
          <%@include file="jspf_FragmentosPag/PieSeccion.jspf" %>
     </body>
 </html>

@@ -25,7 +25,7 @@
 
             <div class="titulo">
                 <h1>Inventariar Material</h1>
-                <p>Captura los productos a inventariar.</p>
+                <p>Captura los materiales a inventariar.</p>
             </div>
 
             <form action="inventariarMaterial" method="post" name="CapturarInventariarMaterial" class="inventarioMaterial">
@@ -51,8 +51,8 @@
                     <%--Cantidad del producto--%>
                     <div class="fila">
                         <div class="celda label"> <label for="cantidadId">Cantidad* &ensp;</label> </div>
-                        <div class="celda"> <input type="number" id="cantidadId" name="cantidad" value="0" 
-                                                   size="3" min="1" max="999" required/></div>
+                        <div class="celda"> <input type="number" id="cantidadId" name="cantidad" value="1" 
+                                                   size="3" min="1" max="999" maxlength="3" onkeypress="return checkInput(event)" required/></div>
                     </div>
                 </div>
                     <br>
@@ -69,11 +69,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="error" ></div>
             </form>
 
         </main>
 
-
+        <script src="js/script.js"></script>
         <%@include file="jspf_FragmentosPag/PieSeccion.jspf" %>
     </body>
 

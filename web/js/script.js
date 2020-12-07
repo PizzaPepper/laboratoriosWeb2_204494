@@ -6,7 +6,6 @@
 
 
 document.getElementById("claveId").addEventListener("keydown", checkinputClave);
-//document.getElementById("nombreProd").addEventListener("keypress", checkInputProd);
 
 function checkinputClave() {
     let x = document.getElementById("errorClave");
@@ -35,4 +34,25 @@ function checkInputProd(char) {
     } else {
         x.innerText = "";
     }
+}
+
+function checkInput(char){
+    let x = document.getElementsByClassName("error")[0];
+    let y = document.getElementById("cantidadId").value;
+    let ch=char.key;
+
+    console.log(typeof y);
+
+    if(ch=="-"){
+        event.returnValue = false;
+        x.innerHTML="No se acepta valor negativo";
+    }else if(y.length>2){
+        event.returnValue = false;
+        x.innerHTML="Longitud maxima";
+    }
+    else{
+        x.innerHTML="";
+    }
+    
+
 }
