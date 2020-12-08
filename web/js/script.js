@@ -10,7 +10,6 @@ document.getElementById("claveId").addEventListener("keydown", checkinputClave);
 function checkinputClave() {
     let x = document.getElementById("errorClave");
     let y = document.getElementById("claveId");
-    let value= document.getElementById("claveId").value;
     if (event.keyCode == 32) {
         event.returnValue = false;
         y.style.border = "2px solid red";
@@ -24,11 +23,11 @@ function checkinputClave() {
 function checkInputProd(char) {
     let x = document.getElementsByClassName("error")[0];
     let checkinp = /[@#$%^!&*()_+*]/g;
-    
+
     if (event.keyCode == 32) {
         event.returnValue = false;
         x.innerText = "No se acepta espacios";
-    } else if (checkinp.test(char.key)==true) {
+    } else if (checkinp.test(char.key) == true) {
         event.returnValue = false;
         x.innerText = "No se acepta Simbolos";
     } else {
@@ -36,23 +35,21 @@ function checkInputProd(char) {
     }
 }
 
-function checkInput(char){
+function checkInput(char) {
     let x = document.getElementsByClassName("error")[0];
     let y = document.getElementById("cantidadId").value;
-    let ch=char.key;
+    let ch = char.key;
 
     console.log(typeof y);
 
-    if(ch=="-"){
+    if (ch == "-") {
         event.returnValue = false;
-        x.innerHTML="No se acepta valor negativo";
-    }else if(y.length>2){
+        x.innerHTML = "No se acepta valor negativo";
+    } else if (y.length > 2) {
         event.returnValue = false;
-        x.innerHTML="Longitud maxima";
+        x.innerHTML = "Longitud maxima";
+    } else {
+        x.innerHTML = "";
     }
-    else{
-        x.innerHTML="";
-    }
-    
-
 }
+

@@ -33,11 +33,7 @@ public class DAOPersistencia implements interfaces.IPersistencia {
     public DAOPersistencia() {
     }
 
-    public boolean existe(Producto producto) throws PersistenciaException {
-        Producto p = obten(producto);
-        boolean res = (p == null) ? false : true;
-        return res;
-    }
+    
 
     @Override
     public Producto obten(Producto producto) throws PersistenciaException {
@@ -369,6 +365,12 @@ public class DAOPersistencia implements interfaces.IPersistencia {
     @Override
     public ArrayList<ReqReactivo> consultarReqReactivos(Analisis analisis) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public boolean existe(Producto producto) throws PersistenciaException {
+        Producto p = obten(producto);
+        boolean res = (p == null) ? false : true;
+        return res;
     }
 
 }

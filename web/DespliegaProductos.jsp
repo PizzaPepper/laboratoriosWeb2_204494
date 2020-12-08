@@ -59,7 +59,6 @@
 
             </table>
         </main>
-
         <%@include file="jspf_FragmentosPag/PieSeccion.jspf" %>
     </body>
 </html>
