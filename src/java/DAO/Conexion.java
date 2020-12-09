@@ -19,7 +19,7 @@ public class Conexion {
     private  String URL = "jdbc:mysql://localhost:3306/laboratorio?useTimeZone=true&serverTimezone=UTC&autoReconnect=true&useSSL=false";
     private String DRIVER = "com.mysql.jdbc.Driver";
     private String USER = "root";
-    private String PASSWORD = "1234";
+    private String PASSWORD = "sesamo";
 
     private Conexion() {
         try {
